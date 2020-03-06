@@ -1,0 +1,230 @@
+/*Reset CSS*/
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/*Classes auxiliares*/
+.clear{clear: both;}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+/*Formatacao da classe cabecalho*/
+.cabecalho{
+    background: rgba(33, 35, 67, 1);
+    padding: 10px 0;
+}
+.logo{
+    float: left;
+}
+.logo a{
+    text-decoration: none;
+}
+/*Formatacao do banner-pricipal*/
+.banner-principal{
+    background: url('../img/header_bg.png');
+    background-repeat: no-repeat;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/*Formatacao da descricao*/
+.descricao{
+    background: rgba(27, 33, 117, 0.3);
+    list-style: inside;
+    float: left;
+    width: 50%;
+    margin-top: 110px;
+    height: auto;
+}
+.descricao ul{
+    color: white;
+}
+.descricao ul li{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+/*Formatacao do formulario*/
+.formulario{
+    background: white;
+    float: right;
+    width: 50%;
+    max-width: 350px;
+    padding: 30px 20px;
+    border: 12px solid rgba(0, 0, 0, 0.3);
+    background-clip: padding-box;
+    height: 560px;
+    position: relative;
+    top: -30px;
+}
+.formulario h2{
+    font-size: 21px;
+    color: #a5a2a2;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+.formulario p{
+    color: #a5a2a2;
+    font-size: 18px;
+    font-weight: lighter;
+}
+.formulario label{
+    color: #a5a2a2;
+}
+input[type=text],
+input[type=email],
+input[type=tel]{
+    border: 1px solid #c7c7c7;
+    height: 48px;
+    width: 100%;
+    margin: 8px 0 10px 0;
+    padding-left: 10px;
+}
+.formulario button{
+    background: rgba(54, 58, 109, 1);
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 210px;
+    height: 45px;
+    position: relative;
+    top: 55px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.formulario button:hover{
+    background: rgba(54, 58, 109, 0.8);
+}
+
+/*Formatacao do artigo*/
+.artigo{
+    background: rgba(221, 221, 221, 1);
+    height: auto;
+    padding: 20px 10px 10px 10px;
+}
+.artigo h2{
+    font-size: 22px;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: lighter;
+}
+.artigo p{
+    margin-top: 20px;
+    text-align: justify;
+    font-weight: lighter;
+    color: #575757;
+}
+
+/*Formatacao ponto-divisor*/
+.ponto-divisor{
+    width: 64px;
+    height: 64px;
+    background: url('../img/arrow.png');
+    position: relative;
+    top: 75px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Formatacao dos icones*/
+.icones{
+    height: auto;
+    padding: 50px 0 130px 0;
+}
+.icones h2{
+    text-align: center;
+    margin: 30px 0;
+    font-size: 25px;
+    color: #575757;
+    font-weight: lighter;
+}
+.grupo-icones{
+    width: 33.3%;
+    float: left;
+    text-align: center;
+    margin-top: 20px;
+}
+.grupo-icones h3{
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: lighter;
+}
+.grupo-icones p{
+    text-align: left;
+    padding: 5px 25px;
+    color: #575757; 
+}
+
+/*Formatacao do rodape*/
+.rodape{
+    border-top: 3px solid #575757;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 17px;
+    font-weight: lighter;
+    color: #575757;
+}
+
+/*Formatacao para dispositivos moveis*/
+@media screen and (min-width: 0px) and (max-width: 768px){
+    .logo{
+        position: relative;
+        top: 12px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .descricao{
+        display: none;
+    }
+    .formulario{
+        width: 100%;
+    }
+    .icones h2{
+        font-size: 21px;
+    }
+    .grupo-icones{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .grupo-icones p{
+        text-align: center;
+    }
+    .formulario{
+        height: 500px;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+    .formulario button{
+        top: 30px;
+        height: 40px;
+        width: 180px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1050px){
+    .logo{
+        position: relative;
+        top: 12px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
